@@ -1,0 +1,177 @@
+/* style.css */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: black;
+}
+
+.hero {
+    position: relative;
+    height: 300px;
+    background: url("img/sixlove-bg.png") no-repeat center center;
+    background-size: cover;
+}
+
+.astronaut {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    width: 120px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #000;
+    text-align: center; /* ← HIER NEU */
+}
+
+
+h1, h2 {
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+p {
+    margin-bottom: 24px;
+    color: #ccc;
+}
+
+.link-grid {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+    min-width: 240px;
+}
+
+.column a {
+    color: #4aaaff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.column a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.banner-section {
+    flex: 1 1 300px;
+    text-align: center;
+    padding: 10px;
+}
+
+.banner-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.sixads {
+    margin-top: 4px;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.rss-item {
+    margin: 10px;
+    flex: 1 1 300px;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #4aaaff;
+    color: black;
+    padding: 6px 14px;
+    border: none;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    color: #aaa;
+    background-color: #000;
+}
+
+.footer a {
+    margin: 0 10px;
+    color: #4aaaff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .link-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .astronaut {
+        display: none;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rss-item {
+        width: 100%;
+    }
+}
